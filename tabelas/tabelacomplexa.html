@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>Produzidos x Vendidos por loja</caption>
+
+        <colgroup> <col style="background-color:cadetblue">
+            <col span="2" style="background-color:aqua">
+            <col span="2" style="background-color:aquamarine">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <!-- o rowspan serve para ocupar linhas vazias -->
+                <!-- colspan serve para ocupar colunas -->
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Gaby Jarros</th>
+                <th colspan="2" scope="colgroup">Gaby Doces</th>
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">doces</th>
+                        <td>30</td>
+                        <td>12</td>
+                        <td>45</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">jarros</th>
+                        <td>42</td>
+                        <td>35</td>
+                        <td>19</td>
+                        <td>19</td>
+                    </tr>
+                </tbody>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
